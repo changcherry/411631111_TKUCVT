@@ -18,7 +18,8 @@
 
 ## 四層驗收證據
 - [ ] ① Repository：`cat /etc/apt/sources.list.d/docker.list`
-> 輸出 deb [arch=arm64 signed-by=/etc/apt/keyrings/docker.gpg]   >https://download.docker.com/linux/ubuntu   noble stable
+> 輸出 deb [arch=arm64 signed-by=/etc/apt/keyrings/docker.gpg]
+>  https://download.docker.com/linux/ubuntu   noble stable
 - [ ] ② Engine：`dpkg -l | grep docker-ce` 輸出
 - [ ] ③ Daemon：`sudo systemctl status docker` 顯示 active
 - [ ] ④ 端到端：`sudo docker run hello-world` 成功輸出
