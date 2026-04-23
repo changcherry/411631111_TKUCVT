@@ -14,9 +14,10 @@
 
 ## 5. Part D：故障演練
 ### 故障 1：<F1/F2/F3 擇一>
-- 注入方式：
-- 故障前：
-- 故障中：
+**F1**
+- 注入方式：sudo ip link set enp0s1 down
+- 故障前：在 Host 執行：ssh app 可正常登入，顯示：cherry@app:~$
+- 故障中：在 Host 執行：ssh app 
 - 回復後：
 - 診斷推論：
 
